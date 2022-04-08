@@ -1,0 +1,73 @@
+:root {
+  --primery-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --accent-color: #18a0fb;
+  --second-text-color: #f5f5f5;
+  --white-text-color: #ffffff;
+}
+body {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+}
+.list {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.section-title {
+  color: green;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000;
+}
+
+/* Цвет основного текста #000000 */
+/* Вторичный цвет текста rgba(0, 0, 0, 0.8) */
+/* белый #FFFFFF */
+/* акцент #18A0FB */
+/* вторичный цвет фона #F5F5F5 */
+
+.logo {
+  color: var(--title-text-color);
+}
+.logo :hover {
+  color: var(--accent-color);
+}
+/* site-nav */
+.site-nav .link {
+  color: var(--primery-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.section-comment .title {
+  color: var(--title-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* button */
+.button {
+  /* color: var(--title-text-color);
+  background-color: var(--white-text-color); */
+  padding: 4px;
+  font-size: 24px;
+  display: inline-block;
+  border: 1px solid tomato;
+}
+.button.primery {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  border-color: transparent;
+}
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(--title-text-color);
+  border-color: red;
+}
